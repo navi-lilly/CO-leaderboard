@@ -16,10 +16,10 @@ pip install pandas matplotlib
 
 ```bash
 # Basic leaderboard (medal count + points)
-python medal_report.py data/olympic_medals.csv
+python medal_report.py olympic_medals.csv
 
 # With per-capita chart (requires population file)
-python medal_report.py data/olympic_medals.csv data/population_reference.csv
+python medal_report.py olympic_medals.csv population_reference.csv
 ```
 
 ## Output
@@ -34,8 +34,8 @@ python medal_report.py data/olympic_medals.csv data/population_reference.csv
 
 | File | Description |
 |------|-------------|
-| `data/olympic_medals.csv` | One row per athlete per event. Required columns: `country_code`, `country_name`, `medal` |
-| `data/population_reference.csv` | Country populations in millions. Required columns: `country_code`, `country_name`, `population_millions`. Currently covers 30 countries — add rows to expand coverage. |
+| `olympic_medals.csv` | One row per athlete per event. Required columns: `country_code`, `country_name`, `medal` |
+| `population_reference.csv` | Country populations in millions. Required columns: `country_code`, `country_name`, `population_millions`. Currently covers 30 countries — add rows to expand coverage. |
 
 ## Scoring
 
